@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ENGHub Tests</title>
+  <link rel="stylesheet" href="../static/css/common.css">
+  <link rel="stylesheet" href="../static/css/theory-css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+<div id="title"> <a href="/workplace">ENGHub </a></div>
+<div class="theory-body">
+  <div class="theory-content">
+    <div class="menu-body">
+      Тесты
+      <div class="menu-content">
+        Грамматика
+        <div class="menu-block">
+        <div class="menu-block">
+          <a th:href="@{/tests?number=article}">1. Артикли</a>
+          <a th:href="@{/tests?number=pronoun}">2. Местоимения</a>
+          <a th:href="@{/tests?number=adjective}">3. Прилагательные</a>
+          <a th:href="@{/tests?number=tobe}">4. Глагол to be</a>
+          <a th:href="@{/tests?number=modal}">5. Модальные глаголы</a>
+        </div></div>
+      </div>
+    </div>
+    <div id="data-content">
+    </div>
+  </div>
+</div>
+<footer>
+  <div>
+    Сайт выполнен в ходе курсовой работы <br>
+    Автор: Василёнок Максим Александрович <br>
+    Минск 2023<br>
+  </div>
+</footer>
+</body>
+<script src="../static/js/tests-js.js"></script>
+</html>

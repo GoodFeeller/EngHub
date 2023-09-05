@@ -1,0 +1,251 @@
+
+:root {
+    --index: calc(1vw + 1vh);
+}
+
+body {
+    background-color: black;
+    font-family: "Bauhaus 93";
+    color: white;
+    margin: 0;
+}
+
+#main {
+    background: rgb(32, 32, 54);
+    width: 100%;
+    height: 100%;
+}
+
+#main-body {
+    width: 100%;
+    background-image: url("../images/main-background.jpg");
+    background-size: cover;
+}
+#main-content {
+    color: orange;
+    text-shadow: calc(var(--index) * 0.5) calc(var(--index) * 0.5) calc(var(--index) * 0.8) black ;
+    padding: 2%;
+    font-size: calc(var(--index) * 2.5);
+    margin-left: calc(var(--index));
+}
+
+.sign-btn {
+    height: calc(var(--index) * 3);
+    width: calc(var(--index) * 11);
+    font-size: calc(var(--index));
+    font-weight: bold;
+    background-color: rgb(0,0,0,0.3);
+    color: orange;
+    border: calc(var(--index) * 0.2) solid black;
+}
+.main-info {
+    padding-bottom: calc(var(--index));
+    display: flex;
+    flex-direction: row;
+}
+
+.main-info-content {
+    display: inline-block;
+    font-size: calc(var(--index) * 2);
+}
+.sign-btn:hover {
+    background-color:orange;
+    color: white;
+}
+
+.main-left {
+    float: left;
+    margin: calc(var(--index)) calc(var(--index)) calc(var(--index)) calc(var(--index) * 4);
+}
+
+.main-right {
+    float: right;
+    margin: calc(var(--index)) calc(var(--index) * 4) calc(var(--index)) calc(var(--index));
+}
+
+.main-img {
+    height: calc(var(--index) * 15);
+    width: calc(var(--index) * 31);
+}
+
+
+#input-data-body {
+    padding-top: calc(var(--index));
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+#input-data {
+    font-size: calc(var(--index));
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "logText" "logInput"
+    "pasText" "pasInput"
+    "enter";
+    grid-row-gap: calc(var(--index));
+    width: calc(var(--index) * 30);
+}
+
+#input-data:nth-child(1) {
+    grid-area: logText;
+}
+#input-data:nth-child(2) {
+    grid-area: logInput;
+}
+#input-data:nth-child(3) {
+    grid-area: pasText;
+}
+#input-data:nth-child(4) {
+    grid-area: pasInput;
+}
+#input-data:nth-child(5) {
+    grid-area: enter;
+}
+#register-data button {
+    font-family: "Bauhaus 93";
+    font-size: calc(var(--index) * 0.9);
+    border: 0;
+    height: calc(var(--index) * 1.5);
+    margin-top: calc(var(--index) * 0.1);
+    background: white;
+}
+form div input, #register-data div input{
+    font-family: "Bauhaus 93";
+    font-size: calc(var(--index) * 0.9);
+    border: 0;
+    height: calc(var(--index) * 1.5);
+    margin-left: calc(var(--index));
+    margin-top: calc(var(--index) * 0.1);
+    background: white;
+}
+
+
+
+
+
+input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+form div, #register-data div, #register-data button{
+    height: calc(var(--index) * 1.7);
+    border-radius: 45px;
+    background-color: white;
+    border: white 4px solid;
+    display: inline;
+
+}
+
+form div:hover, #register-data div:hover, #register-data button:hover {
+    border: #ffa243 4px solid;
+
+}
+
+.input-div {
+    width: calc(var(--index) * 24);
+}
+
+.input-div input {
+    width: calc(var(--index) * 22);
+}
+
+.sub-div {
+    width: calc(var(--index) * 15);
+}
+
+.sub-div input {
+    width: calc(var(--index) * 13);
+}
+
+.info-block {
+    text-align: center;
+    padding-bottom: calc(var(--index));
+    font-size: calc(var(--index) * 0.8);
+    line-height: calc(var(--index) );
+}
+
+.info-block div {
+    color: red;
+}
+
+.info-block a {
+    color: orange;
+}
+
+
+#register-data {
+    font-size: calc(var(--index));
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "logText" "logInput"
+    "pasText" "pasInput"
+    "confText" "confInput"
+    "enter";
+    grid-row-gap: calc(var(--index));
+    width: calc(var(--index) * 30);
+}
+
+#register-data:nth-child(1) {
+    grid-area: logText;
+}
+#register-data:nth-child(2) {
+    grid-area: logInput;
+}
+#register-data:nth-child(3) {
+    grid-area: pasText;
+}
+#register-data:nth-child(4) {
+    grid-area: pasInput;
+}
+#register-data:nth-child(5) {
+    grid-area: confText;
+}
+
+#register-data:nth-child(6) {
+    grid-area: confInput;
+}
+
+#register-data:nth-child(7) {
+    grid-area: enter;
+}
+
+@media screen and (max-aspect-ratio: 1/1)     {
+.main-left {
+    float: left;
+    margin: calc(var(--index)* 0.5) calc(var(--index) * 0.5) calc(var(--index)* 0.5) calc(var(--index) * 2);
+}
+
+.main-right {
+    float: right;
+    margin: calc(var(--index)* 0.5) calc(var(--index) * 2) calc(var(--index)* 0.5) calc(var(--index)* 0.5);
+}
+
+.main-img {
+    height: calc(var(--index) * 7.5);
+    width: calc(var(--index) * 15.5);
+}
+    .main-info-content {
+        display: inline-block;
+        font-size: calc(var(--index) * 1.5);
+    }
+
+    .input-div {
+        width: calc(var(--index) * 12);
+    }
+
+    .input-div input {
+        width: calc(var(--index) * 10);
+    }
+
+    .sub-div {
+        width: calc(var(--index) * 7.5);
+    }
+
+    .sub-div input {
+        width: calc(var(--index) * 6);
+    }
+}

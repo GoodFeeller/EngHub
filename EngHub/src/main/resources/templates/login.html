@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>ENGHub Login</title>
+  <link rel="stylesheet" href="../static/css/index-css.css">
+  <link rel="stylesheet" href="../static/css/common.css">
+</head>
+<body>
+<div id="main">
+  <div id="main-body">
+    <div id="main-content">
+      <h1>ENGHub</h1>
+      <h2>Учи английский вместе с нами!</h2>
+      <h4>Здесь ты найдёшь множество тестов, теории, а также сможешь следить за прогрессом обучения в профиле!</h4>
+    </div>
+  </div>
+  <div id="input-data-body">
+      <form id="input-data" th:action="@{/login}" method="post">
+        <label>User Name : </label>
+        <div class="input-div">
+          <input type="text" name="username"/>
+        </div>
+        <label>Password: </label>
+        <div class="input-div">
+          <input type="password" name="password"/>
+        </div>
+        <div class="sub-div"><input id="sub" type="submit" value="Sign In"/></div>
+      </form>
+  </div>
+<div class="info-block">
+  <div th:if="${param.error}">
+    Invalid username or password.
+  </div>
+  <div th:if="${param.logout}">
+    You have been logged out.
+  </div>
+  <a href="registration">Нет аккаунта? Зарегистрируйся!</a> <br>
+  <a href="/">На главную</a>
+</div>
+</div>
+<footer>
+  <div>
+    Сайт выполнен в ходе курсовой работы <br>
+    Автор: Василёнок Максим Александрович <br>
+    Минск 2023<br>
+  </div>
+</footer>
+</body>
+</html>

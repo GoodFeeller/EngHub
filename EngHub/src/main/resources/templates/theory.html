@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ENGHub Theory</title>
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/theory-css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+<div id="title"> <a href="/workplace">ENGHub </a></div>
+<div class="theory-body">
+    <div class="theory-content">
+        <div class="menu-body">
+            Темы
+            <div class="menu-content">
+                Грамматика
+                <div class="menu-block">
+                    <a th:href="@{/theory?theme=article}">1. Артикли</a>
+                    <div class="menu-block">
+                            <a th:href="@{/theory?theme=indefiniteArticle}">1.1 Неопределённый артикль</a>
+                        <a th:href="@{/theory?theme=definiteArticle}">1.2 Определённый артикль</a>
+                        <a th:href="@{/theory?theme=zeroArticle}">1.3 Нулевой артикль</a>
+                    </div>
+                    <a th:href="@{/theory?theme=noun}">2. Существительное</a>
+                    <div class="menu-block">
+                        <a th:href="@{/theory?theme=pluralNoun}">2.1 Множественное существительное</a>
+                        <a th:href="@{/theory?theme=nounGender}">2.2 Категория рода существительных</a>
+                        <a th:href="@{/theory?theme=possessiveCase}">2.3 Падежи существительных</a>
+                    </div>
+                    <a th:href="@{/theory?theme=pronoun}">3. Местоимение</a>
+                    <div class="menu-block">
+                        <a th:href="@{/theory?theme=personalPronoun}">3.1 Личные местоимения</a>
+                        <a th:href="@{/theory?theme=possessivePronouns}">3.2 Притяжательные местоимения</a>
+                        <a th:href="@{/theory?theme=reflexivePronouns}">3.3 Возвратные местоимения</a>
+                        <a th:href="@{/theory?theme=interrogativePronouns}">3.4 Вопросительные местоимения</a>
+                        <a th:href="@{/theory?theme=demonstrativePronouns}">3.5 Указательные местоимения</a>
+                        <a th:href="@{/theory?theme=relativePronouns}">3.6 Относительные местоимения</a>
+                    </div>
+                    <a th:href="@{/theory?theme=adjective}">4. Прилагательное</a>
+                    <div class="menu-block">
+                        <a th:href="@{/theory?theme=queueAdjective}">4.1 Порядок следования прилагательных</a>
+                        <a th:href="@{/theory?theme=degreesAdjective}">4.2 Степени сравнения</a>
+                    </div>
+                    <a th:href="@{/theory?theme=adverb}">5. Наречие</a>
+                    <div class="menu-block">
+                        <a th:href="@{/theory?theme=typesAdverb}">5.1 Типы наречий</a>
+                        <a th:href="@{/theory?theme=placeAdverb}">5.2 Место в предложении</a>
+                        <a th:href="@{/theory?theme=degeesAdverb}">5.2 Степени сравнения наречий</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="data-content">
+        </div>
+    </div>
+</div>
+<footer>
+    <div>
+        Сайт выполнен в ходе курсовой работы <br>
+        Автор: Василёнок Максим Александрович <br>
+        Минск 2023<br>
+    </div>
+</footer>
+</body>
+<script src="../static/js/theory-script.js"></script>
+</html>

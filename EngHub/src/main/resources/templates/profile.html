@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ENG Hub Profile</title>
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/profile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+<div id="title"> <a href="/workplace">ENGHub </a></div>
+<div class="profile-body">
+    <div class="profile-content">
+        <div id="user-info" class="profile-block">
+            <div id="user-info-content">
+            <div class="profile-title">Профиль</div>
+            <div class="profile-div-image">
+                <img class="profile-image" src="../static/images/nophoto.jpg">
+            </div>
+                <div class="input-body" id="input-url-body">
+                    </div>
+
+            <div id="profile-username">GoodFeeller</div>
+            <div class="profile-user-data" id="name-div">Имя: <span id="profile-name" ></span> </div>
+            <div class="profile-user-data" id="surname-div">Фамилия: <span id="profile-surname"></span></div>
+            </div>
+            <div class="change-profile-div"><button class="change-profile-btn">Редактировать</button></div>
+        </div>
+
+        <div id="settings" class="profile-block">
+            <div class="profile-title">Настройки</div>
+            <button class="change-profile-btn" id="logout">Выйти из профиля</button>
+            <button class="change-profile-btn" id="toSettings">Подробные настройки</button>
+        </div>
+        <div id="tests-info" class="profile-block">
+            <div class="profile-title">Тесты</div>
+            <div class="test-div">
+                <div class="current-test-div">
+                    <div class="test-name">Артикли</div>
+                    <div class="test-body">
+                        <div class="line-body">
+                            <div class="line">
+                                <div class="result-line" id="article-res-line"></div>
+                                <div class="full-result-line" id="article-line"></div>
+                            </div>
+                        </div>
+                        <div class="result-number" id="article-result"></div>
+                    </div>
+                </div>
+                <div class="current-test-div">
+                    <div class="test-name">Местоимение</div>
+                    <div class="test-body">
+                        <div class="line-body">
+                            <div class="line">
+                                <div class="result-line" id="pronoun-res-line"></div>
+                                <div class="full-result-line" id="pronoun-line"></div>
+                            </div>
+                        </div>
+                        <div class="result-number" id="pronoun-result"></div>
+                    </div>
+                </div>
+                <div class="current-test-div">
+                    <div class="test-name">Прилагательные</div>
+                    <div class="test-body">
+                        <div class="line-body">
+                            <div class="line">
+                                <div class="result-line" id="adjective-res-line"></div>
+                                <div class="full-result-line" id="adjective-line"></div>
+                            </div>
+                        </div>
+                        <div class="result-number" id="adjective-result"></div>
+                    </div>
+                </div>
+                <div class="current-test-div">
+                    <div class="test-name">Глагол to be</div>
+                    <div class="test-body">
+                        <div class="line-body">
+                            <div class="line">
+                                <div class="result-line" id="tobe-res-line"></div>
+                                <div class="full-result-line" id="tobe-line"></div>
+                            </div>
+                        </div>
+                        <div class="result-number" id="tobe-result"></div>
+                    </div>
+                </div>
+                <div class="current-test-div">
+                    <div class="test-name">Модальные глаголы</div>
+                    <div class="test-body">
+                        <div class="line-body">
+                            <div class="line">
+                                <div class="result-line" id="modal-res-line"></div>
+                                <div class="full-result-line" id="modal-line"></div>
+                            </div>
+                        </div>
+                        <div class="result-number" id="modal-result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div>
+        Сайт выполнен в ходе курсовой работы <br>
+        Автор: Василёнок Максим Александрович <br>
+        Минск 2023<br>
+    </div>
+</footer>
+<script  charset="windows-1251" type="text/javascript" src="../static/js/profile-script.js"></script>
+</body>
+</html>

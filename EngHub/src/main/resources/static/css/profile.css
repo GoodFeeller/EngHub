@@ -1,0 +1,289 @@
+body {margin: 0}
+#title {
+    background-color: #1e1d1d;
+}
+.profile-body {
+    background-color: #1e1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Базовые контейнеры*/
+
+.profile-content {
+    margin-top: calc(var(--index) * 3);
+    padding-bottom: calc(var(--index) * 3);
+    width: calc(var(--index) * 55);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1.4fr;
+    grid-template-areas: "profile settings"
+    "profile tests";
+}
+/*Grid контейнер*/
+
+
+.profile-block {
+    background-color: white;
+    border-radius: calc(var(--index));
+
+}
+#user-info {
+    grid-area: profile;
+    width: calc(var(--index) * 23);
+    height: calc(var(--index) * 40);
+}
+#settings {
+    grid-area: settings;
+    width: calc(var(--index) * 30);
+    height: calc(var(--index) * 15);
+}
+#tests-info {
+    grid-area: tests;
+    width: calc(var(--index) * 30);
+    height: calc(var(--index) * 23.35);
+}
+/*Основные блоки*/
+
+
+.profile-title {
+    font-size: calc(var(--index) * 3);
+    font-family: Bauhaus;
+    margin-left: calc(var(--index) * 2);
+    margin-top: calc(var(--index));
+}
+.profile-image {
+    object-fit: cover;
+    width: calc(var(--index) * 13);
+    height: calc(var(--index) * 13);
+    margin-top: calc(var(--index) * 2);
+    margin-left: calc(var(--index) * 2);
+    margin-bottom: calc(var(--index) * 2);
+    border-radius: calc(var(--index) * 0.2);
+    transition: all ease 0.4s;
+}
+.profile-image:hover {
+    width: calc(var(--index) * 15);
+    height: calc(var(--index) * 15);
+    border-radius: calc(var(--index));
+    margin-bottom: 0;
+}
+
+.profile-user-data {
+    font-family: Bauhaus;
+    font-size: calc(var(--index) * 1.5);
+    font-weight: bolder;
+    margin-top: calc(var(--index));
+    margin-left: calc(var(--index) * 2);
+}
+#name-div, #surname-div {
+    transition: 0.5s all;
+}
+#profile-username {
+    font-family: Bauhaus;
+    font-size: calc(var(--index) * 2);
+    font-weight: bold;
+    margin-top: calc(var(--index) * 1);
+    margin-left: calc(var(--index) * 2);
+}
+.profile-user-data span {
+    font-weight: normal;
+}
+.change-profile-btn {
+    background-color: #0000;
+    border: 0;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: Bauhaus;
+    font-size: calc(var(--index) * 1.5);
+    margin-right: calc(var(--index) * 1.5);
+    padding: calc(var(--index) * 0.3);
+    transition: all ease 0.4s;
+    margin-top: calc(var(--index));
+}
+.change-profile-btn:hover {
+    background-color: black;
+    color: white;
+}
+.change-profile-div {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+#user-info-content {
+    height: calc(var(--index) * 35);
+}
+/*Контент профиля*/
+
+#logout {
+    margin-left: calc(var(--index) * 2);
+    margin-top: calc(var(--index) * 2);
+}
+#toSettings {
+    margin-left: calc(var(--index) * 2);
+}
+/*Настрйоки*/
+
+
+
+.test-body {
+    margin-left: calc(var(--index) * 2);
+}
+.test-name {
+    font-size: calc(var(--index) * 1);
+    font-family: Bauhaus;
+    margin-top: calc(var(--index) * 2);
+}
+.line-body {
+    display: inline-block;
+}
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: calc(var(--index));
+}
+.result-line {
+    box-shadow: green 0 0 calc(var(--index) * 0.1);
+    background-color: green;
+    border-top-left-radius: calc(var(--index));
+    border-bottom-left-radius: calc(var(--index));
+    height: calc(var(--index) * 0.5);
+    display: inline-block;
+    margin-right: 0;
+}
+
+.full-result-line {
+    margin-left: 0;
+    background-color: #3b065b;
+    height: calc(var(--index) * 0.5);
+    border-top-right-radius: calc(var(--index));
+    border-bottom-right-radius: calc(var(--index));
+    display: inline-block;
+}
+.result-number {
+    display: inline-block;
+    font-family: Bauhaus;
+    font-size: calc(var(--index) * 1);
+    width: calc(var(--index) * 3);
+    text-align: end;
+}
+.current-test-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.test-div {
+    margin-right: calc(var(--index) * 2);
+    display: flex;
+    flex-direction: column;
+    margin-left: calc(var(--index) * 2);
+}
+
+
+input {
+    width: calc(var(--index) * 12);
+    height: calc(var(--index) * 0.8);
+    font-size: calc(var(--index));
+    outline: 0;
+    outline-offset: 0;
+    border: 0;
+    font-family: Bauhaus;
+
+}
+#input-url-body {
+    transition: all 0.4s;
+    opacity: 0;
+}
+#url-div {
+    margin-left: calc(var(--index) * 2);
+}
+.input-body {
+    display: inline-block;
+}
+.div-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: calc(var(--index));
+    width: calc(var(--index) * 14);
+    height: calc(var(--index) * 1.2);
+    border: calc(var(--index) * 0.2 ) solid black;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-aspect-ratio: 6/5) {
+    .profile-content {
+        width: calc(var(--index) * 50);
+    }
+    #user-info {
+        width: calc(var(--index) * 21);
+    }
+    #settings {
+        width: calc(var(--index) * 27);
+    }
+    #tests-info {
+        width: calc(var(--index) * 27);
+    }
+    .test-name {
+        font-size: calc(var(--index) * 0.6);
+    }
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .profile-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(var(--index) * 50);
+    }
+    .profile-block {
+        margin-top: calc(var(--index) * 2);
+    }
+    #user-info {
+        width: calc(var(--index) * 32);
+    }
+    #settings {
+        width: calc(var(--index) * 32);
+    }
+    #tests-info {
+        width: calc(var(--index) * 32);
+    }
+    .test-name {
+        font-size: calc(var(--index));
+    }
+}
+@media screen and (max-aspect-ratio: 1/2) {
+    .profile-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(var(--index) * 50);
+    }
+    .profile-block {
+        margin-top: calc(var(--index) * 2);
+    }
+    #user-info {
+        width: calc(var(--index) * 27);
+    }
+    #settings {
+        width: calc(var(--index) * 27);
+    }
+    #tests-info {
+        width: calc(var(--index) * 27);
+    }
+    .test-name {
+        font-size: calc(var(--index) * 0.6);
+    }
+}

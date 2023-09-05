@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Rus";
+    src: url("../fonts/rus_font.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Bauhaus";
+    src: url("../fonts/bauhaus.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Bauhaus 93";
+    src: url("../fonts/bauhaus.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    --index: calc(1vw + 1vh)
+}
+#title {
+    font-size: calc(var(--index) * 6);
+    color: white;
+    font-family: "Bauhaus 93";
+    text-align: center;
+
+}
+
+body {
+    background: rgb(32, 32, 54);
+    height: 100%;
+    background-color: black;
+}
+
+footer {
+    margin-top: calc(var(--index));
+    margin-bottom: calc(var(--index) * -10);
+    width: 100%;
+}
+footer div {
+    color: white;
+    background-color: black;
+    font-size: calc(var(--index) * 0.6);
+    padding: calc(var(--index) * 2) 0 calc(var(--index) * 2) calc(var(--index) * 4);
+    line-height: calc(var(--index));
+}
+
+#title a {
+    text-decoration: none;
+    transition: color 0.8s;
+    color: white;
+}
+
+#title a:hover {
+    color: orange;
+}

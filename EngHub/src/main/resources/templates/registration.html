@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="https://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>ENGHub Registration</title>
+    <link rel="stylesheet" href="../static/css/index-css.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+</head>
+<body>
+<div id="main">
+    <div id="main-body">
+        <div id="main-content">
+            <h1>ENGHub</h1>
+            <h2>Учи английский вместе с нами!</h2>
+            <h4>Здесь ты найдёшь множество тестов, теории, а также сможешь следить за прогрессом обучения в профиле!</h4>
+        </div>
+    </div>
+    <div id="input-data-body">
+        <div id="register-data">
+            <label>User Name : </label>
+            <div class="input-div">
+                <input id="username" type="text" name="username"/>
+            </div>
+            <label>Password: </label>
+            <div class="input-div">
+                <input id="password" type="password" name="password"/>
+            </div>
+            <label>Repeat password: </label>
+            <div class="input-div">
+                <input id="repeat" type="password" name="password"/>
+            </div>
+            <button id="sub" class="sub-div" onclick="register()">Sign Up</button>
+        </div>
+    </div>
+    <div class="info-block">
+        <div th:if="${param.errPas}">
+            Некорректный пароль! Пароль может содержать латинские буквы и цифры (6 - 12 символов)
+        </div>
+        <div th:if="${param.errUser}">
+            Некорректный логин! Логин может содержать латинские буквы и цифры (6 - 12 символов)
+        </div>
+        <div th:if="${param.errRep}">
+            Пароли не совпадают!
+        </div>
+        <div th:if="${param.exist}">
+            Такой логин уже существует!
+        </div>
+        <a href="login">Есть аккаунт?</a> <br>
+        <a href="/">На главную</a>
+    </div>
+
+</div>
+<footer>
+    <div>
+        Сайт выполнен в ходе курсовой работы <br>
+        Автор: Василёнок Максим Александрович <br>
+        Минск 2023<br>
+    </div>
+</footer>
+<script src="../static/js/register.js"></script>
+</body>
+</html>
